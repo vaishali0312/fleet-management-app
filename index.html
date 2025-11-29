@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> login<</title>
+        <link rel="stylesheet" href=""style.css>
+    </head>
+    <body>
+        <div class="login-container">
+            <h2> Fleet Management Lpogin</h2>
+            <input type="email" id="email" placeholder="enter email">
+                 <input type="password" id="password" placeholder="enter password">
+                 <button onclick="login()">Login</button>
+        </div>
+        <script>
+            function login(){
+                let email=document.getElementById("email").value.trim();
+                let pass=document.getElementById("password").value.trim();
+                if(email=="admin@gmail.com" && pass=="admin1234"){
+                    alert("Login Sucess");
+                    window.location.href="admin.html";
+                }else{
+                    alert("invalid credentials");
+                }
+
+            }
+
+        </script>
+    </body>
+
+               
+    
+</html>
